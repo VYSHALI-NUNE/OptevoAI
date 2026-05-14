@@ -65,10 +65,11 @@ export default function PerformanceChart({ assessments }) {
                 }}
               />
               <Line
-                type="monotone"
+                type="natural"
                 dataKey="score"
-                stroke="hsl(var(--primary))"
+                stroke="currentColor"
                 strokeWidth={2}
+                connectNulls
               />
             </LineChart>
           </ResponsiveContainer>
